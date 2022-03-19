@@ -34,6 +34,8 @@
 
 // export default LogTask
 
+import React from 'react';
+
 class LogTask extends React.Component {
     constructor(props) {
       super(props);
@@ -84,6 +86,6 @@ class LogTask extends React.Component {
   }  
   
   // The following is boilderplate JavaScript
-  ReactDOM.render(<input />, document.getElementById("main"));
+  //ReactDOM.render(<input />, document.getElementById("main"));
   
   export default LogTask
