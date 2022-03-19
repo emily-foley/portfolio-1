@@ -47,7 +47,17 @@ render() {
 
       // If not on the menu or repetition screen (if on the duration screen), show the duration exercise
       } else {
+        
+        if (this.state.currentScreen === DURATION) {
+        
         screen = <DurationExercise {...this.state.exercisePicked}></DurationExercise>
+        
+      }else{
+
+        if (this.state.currentScreen === LOGGER) {
+        
+          screen = <LogTask {...this.state.exercisePicked}></LogTask>
+          
         
       }
     
@@ -56,4 +66,6 @@ render() {
       return screen 
   }
 
+}
+}
 }
