@@ -22,7 +22,7 @@ class LogTask extends React.Component {
             <div>
                 <input placeholder="Num1" onChangeText={Num1=>this.setState({Num1})}/>
                 <input placeholder="Num2" onChangeText={Num2=>this.setState({Num2})}/>
-                <button title="Sum" onClick={this.Sum}/>
+                <button title="Sum" onClick={this.Sum}>Calculate</button>
             </div>
         );
     }
