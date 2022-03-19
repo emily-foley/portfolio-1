@@ -13,7 +13,7 @@ class LogTask extends React.Component {
         var N1=parseInt(this.state.Num1);
         var N2=parseInt(this.state.Num2);
 
-        var R= N1 + N2;
+        var R = N1 + N2;
         alert(R);
     }
 
