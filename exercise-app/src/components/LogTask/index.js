@@ -72,14 +72,14 @@ class LogTask extends React.Component {
       return (
         <div>
           <div>
-            <p>first number:</p>
+            <p>Previous Weight</p>
             <input value={this.state.num1} onChange={this._changeNum1} step="any" />
           </div>
           <div>
-            <p>second number:</p>
+            <p>Current Weight</p>
             <input value={this.state.num2} onChange={this._changeNum2} step="any" />
           </div>
-          <p>Result: {this.state.result}</p>
+          <p>Weight Loss: {this.state.result} lbs</p>
         </div>
       )
     }  
