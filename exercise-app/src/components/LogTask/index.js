@@ -19,11 +19,11 @@ class LogTask extends React.Component {
 
     render() {
         return (
-            <View>
-                <TextInput placeholder="Num1" onChangeText={Num1=>this.setState({Num1})}/>
-                <TextInput placeholder="Num2" onChangeText={Num2=>this.setState({Num2})}/>
-                <Button title="Sum" onPress={this.Sum}/>
-            </View>
+            <div>
+                <input placeholder="Num1" onChangeText={Num1=>this.setState({Num1})}/>
+                <input placeholder="Num2" onChangeText={Num2=>this.setState({Num2})}/>
+                <button title="Sum" onPress={this.Sum}/>
+            </div>
         );
     }
 
