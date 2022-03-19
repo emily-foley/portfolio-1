@@ -16,7 +16,7 @@ class LogTask extends React.Component {
         var N2=parseInt(this.state.Num2);
 
         var R = N1 + N2;
-        this.setState(Result = R);
+        this.setState({Result:R});
     }
 
     render() {
