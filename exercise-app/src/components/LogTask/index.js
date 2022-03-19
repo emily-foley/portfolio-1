@@ -53,7 +53,7 @@ class LogTask extends React.Component {
         var newNum1 = +(e.target.value)
         this.setState({
             num1: newNum1,
-            result: newNum1 + this.state.num2
+            result: newNum1 - this.state.num2
           }); 
       }
     }
@@ -63,7 +63,7 @@ class LogTask extends React.Component {
         var newNum2 = +(e.target.value)
         this.setState({
             num2: newNum2,
-            result: this.state.num1 + newNum2
+            result: this.state.num1 - newNum2
           }); 
       }
     }
