@@ -2,7 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import RepetitionExercise from "./components/RepetitionExercise"
 import DurationExercise from './components/DurationExercise';
-//import LogTask from './components/LogTask';
+import LogTask from './components/LogTask';
 import React from 'react';
 
 //Creating variables for each screen
@@ -54,19 +54,15 @@ render() {
         screen = <DurationExercise {...this.state.exercisePicked}></DurationExercise>
         
       }else{
-
-        if (this.state.currentScreen === LOGGER) {
         
-          screen = <LogTask {...this.state.exercisePicked}></LogTask>
+        screen = <LogTask {...this.state.exercisePicked}></LogTask>
           
-        
-      }
     
     }
+  }
+}
 
       return screen 
   }
 
-}
-}
 }
