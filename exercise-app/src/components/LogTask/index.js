@@ -6,17 +6,17 @@ class LogTask extends React.Component {
     constructor() {
         super()
     
-        this.state = { Num1: 0, Num2: 0 }
-        this.state={Result:0};
+        this.state = { Num1 : 0, Num2 : 0 }
+        this.state={ Result : 0 };
     }
 
     Sum=()=>
     { 
-        var N1=parseInt(this.state.Num1);
-        var N2=parseInt(this.state.Num2);
+        var N1 = parseInt(this.state.Num1);
+        var N2 = parseInt(this.state.Num2);
 
         var R = N1 + N2;
-        this.setState({Result:R});
+        this.setState({Result : R});
     }
 
     render() {
