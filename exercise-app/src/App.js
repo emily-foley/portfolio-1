@@ -8,6 +8,7 @@ import React from 'react';
 const MENU = "menu";
 const DURATION = "duration";
 const REPETITION = "repetition";
+const LOGGER = "logger";
 
 export default class MenuScreen extends React.Component {
   constructor(props){
@@ -16,7 +17,7 @@ export default class MenuScreen extends React.Component {
 //Setting default screen to menu and setting the picked exercise to an empty string
   this.state = {
     currentScreen: MENU,
-    exercisePicked: " "
+    exercisePicked: " ",
   }
 }
 
@@ -26,7 +27,8 @@ render() {
       { objType: REPETITION, name: "Pushups" },
       { objType: DURATION, name: "Bicycling" },
       { objType: REPETITION, name: "Jumping Jacks" },
-      { objType: DURATION, name: "Running" }
+      { objType: DURATION, name: "Running" },
+      { objType: LOGGER, name: "Meal log" }
     ]
   //if on menu screen, show the text and show buttons with the names of the excercises
   let screen
