@@ -7,7 +7,7 @@ class LogTask extends React.Component {
         super()
     
         this.state = { Num1 : 0, Num2 : 0 }
-        this.state={ Result : 0 };
+        this.state = { Result : 0 };
     }
 
     Sum=()=>
@@ -25,7 +25,7 @@ class LogTask extends React.Component {
                 <input placeholder="Num1" onChangeText={Num1=>this.setState({Num1})}/>
                 <input placeholder="Num2" onChangeText={Num2=>this.setState({Num2})}/>
                 <button onClick={this.Sum}>Calculate</button>
-                <input value={this.state.Result}/>
+                <p>{this.state.Result}</p>
             </div>
         );
     }
