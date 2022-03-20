@@ -58,6 +58,14 @@ h1,.something{
   text-align: center;
 }
 
+p{
+  color: black;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 30px;
+  font-weight:800;
+  text-align: center;
+}
+
 
 button{
   display: block;
