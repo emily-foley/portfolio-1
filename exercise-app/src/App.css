@@ -51,7 +51,7 @@ html{
 }
 
 
-.selectButtons{
+button{
   display:inline-block;
   padding:0.3em 1.2em;
   margin:0 0.1em 0.1em 0;
@@ -67,11 +67,11 @@ html{
   transition: all 0.2s;
   background-color:#e54b22;
   }
-  .selectButtons{
+  button{
   border-color: rgb(255, 255, 255);
   }
   @media all and (max-width:30em){
-  .selectButtons{
+  button{
     display:block;
     margin:0.2em auto;
   }
