@@ -1,5 +1,5 @@
 html{
-  margin-left: 150px;
+  margin: 10px 150px;
   background-color: #abd1ff;
 }
 
@@ -67,6 +67,7 @@ button{
   box-sizing: border-box;
   text-decoration:none;
   font-family: 'Montserrat', sans-serif;
+  font-size: 30px;
   font-weight:800;
   color:#fff;
   text-shadow: 0 0.04em 0.04em rgba(0,0,0,0.35);
