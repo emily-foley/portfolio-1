@@ -1,5 +1,6 @@
 html{
   margin-left: 150px;
+  background-color: #abd1ff;
 }
 
 .App {
@@ -60,11 +61,11 @@ html{
   text-decoration:none;
   font-family:'Roboto',sans-serif;
   font-weight:500;
-  color:#000;
+  color:#fff;
   text-shadow: 0 0.04em 0.04em rgba(0,0,0,0.35);
   text-align:center;
   transition: all 0.2s;
-  background-color:#9ccbe6;
+  background-color:#e54b22;
   }
   .selectButtons{
   border-color: rgb(255, 255, 255);
