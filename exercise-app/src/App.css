@@ -58,7 +58,7 @@ h1,.something{
   text-align: center;
 }
 
-p{
+input, p{
   color: black;
   font-family: 'Montserrat', sans-serif;
   font-size: 30px;
@@ -69,7 +69,10 @@ p{
 }
 
 input{
-  align-content: center;
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  
 }
 
 button{
