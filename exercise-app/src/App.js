@@ -38,8 +38,8 @@ render() {
   let screen
     if (this.state.currentScreen === MENU) {
       screen =  <>
-        <h1>Go Do Something!</h1>
-        <p>Select an Exercise</p>
+        <h1 class="something">Go Do Something!</h1>
+        <p>Select a Task</p>
         {objects.map((value) => <li><button onClick ={() => this.setState({currentScreen:value.objType, exercisePicked: value})}>{value.name}</button> </li>)}
        </>
 
