@@ -51,6 +51,7 @@ html{
 
 
 .selectButtons{
+  list-style-type: none;
   display:inline-block;
   padding:0.3em 1.2em;
   margin:0 0.1em 0.1em 0;
