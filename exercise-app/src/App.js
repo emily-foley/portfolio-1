@@ -2,14 +2,14 @@ import logo from './logo.svg';
 import './App.css';
 import RepetitionExercise from "./components/RepetitionExercise"
 import DurationExercise from './components/DurationExercise';
-import LogTask from './components/LogTask';
+import Subtract from './components/Subtract';
 import React from 'react';
 
 //Creating variables for each screen
 const MENU = "menu";
 const DURATION = "duration";
 const REPETITION = "repetition";
-const LOGGER = "logger";
+const SUBTRACT = "subtract";
 
 export default class MenuScreen extends React.Component {
   constructor(props){
@@ -29,7 +29,7 @@ render() {
       { objType: DURATION, name: "Bicycling" },
       { objType: REPETITION, name: "Jumping Jacks" },
       { objType: DURATION, name: "Running" },
-      { objType: LOGGER, name: "Meal log" }
+      { objType: SUBTRACT, name: "Weight Calculator" }
     ]
   //if on menu screen, show the text and show buttons with the names of the excercises
   let screen
@@ -55,7 +55,7 @@ render() {
         
       }else{
         
-        screen = <LogTask {...this.state.exercisePicked}></LogTask>
+        screen = <Subtract {...this.state.exercisePicked}></Subtract>
           
     
     }

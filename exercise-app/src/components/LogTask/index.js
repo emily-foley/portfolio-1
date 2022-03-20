@@ -41,7 +41,7 @@
 
 import React from 'react';
 
-class LogTask extends React.Component {
+class Subtract extends React.Component {
     constructor(props) {
       super(props);
       this.state = { 
@@ -92,4 +92,4 @@ class LogTask extends React.Component {
   }  
   
   
-  export default LogTask
+  export default Subtract
