@@ -11,6 +11,7 @@ const MENU = "menu";
 const DURATION = "duration";
 const REPETITION = "repetition";
 const SUBTRACT = "subtract";
+const LIST ="list";
 
 export default class MenuScreen extends React.Component {
   constructor(props){
@@ -30,7 +31,8 @@ render() {
       { objType: DURATION, name: "Bicycling" },
       { objType: REPETITION, name: "Jumping Jacks" },
       { objType: DURATION, name: "Running" },
-      { objType: SUBTRACT, name: "Weight Calculator" }
+      { objType: SUBTRACT, name: "Weight Calculator" },
+      { objType: LIST, name: "List" }
     ]
   //if on menu screen, show the text and show buttons with the names of the excercises
   let screen
@@ -55,6 +57,12 @@ render() {
         screen = <DurationExercise {...this.state.exercisePicked}></DurationExercise>
         
       }else{
+
+        if (this.state.currentScreen === LIST) {
+        
+          screen = <List {...this.state.exercisePicked}></List>
+        
+        }else{
         
         screen = <Subtract {...this.state.exercisePicked}></Subtract>
           
@@ -62,6 +70,8 @@ render() {
     }
   }
 }
+}
+
 
       return screen 
   }
