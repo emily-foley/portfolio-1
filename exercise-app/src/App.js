@@ -3,6 +3,7 @@ import './App.css';
 import RepetitionExercise from "./components/RepetitionExercise"
 import DurationExercise from './components/DurationExercise';
 import Subtract from './components/Subtract';
+import List from './components/List';
 import React from 'react';
 
 //Creating variables for each screen

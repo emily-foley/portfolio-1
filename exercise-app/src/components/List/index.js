@@ -1,6 +1,6 @@
 import React from 'react'
 
-let groceryList = [
+let listItems = [
     {
        id: 1,
        selected: false, 
@@ -152,26 +152,26 @@ let groceryList = [
       description: "Vinegar"
    },
  ]
- export default class GroceryList extends React.Component {
+ export default class List extends React.Component {
     constructor(props) {
        super(props)
        let filterRef = React.createRef()
-       this.state = {groceryList, curId: groceryList.length+1, filterRef, filtered: false}
+       this.state = {listItems, curId: listItems.length+1, filterRef, filtered: false}
     }
     pickedItem = (itemId) => {
        this.setState((prevState) => {
-          let prevList = [...prevState.groceryList]
+          let prevList = [...prevState.listItems]
           let itemIndex = prevList.findIndex((item) => item.id == itemId)
           prevList[itemIndex] = {...prevList[itemIndex], selected: !prevList[itemIndex].selected,}
-          return {groceryList: [...prevList]}
+          return {listItems: [...prevList]}
        })
     }
     render() {
-       let groceryList = this.state.groceryList
+       let listItems = this.state.listItems
        if (this.state.filtered) {
-          groceryList = groceryList.filter(item=>!item.selected)
+        listItems = listItems.filter(item=>!item.selected)
        }         
-         groceryList = groceryList.map((item) => (
+       listItems = listItems.map((item) => (
           <div key={item.id}>
              <label>
                 <input ref={this.state.checkRef} type= "checkbox" onChange={() => this.pickedItem(item.id)} defaultChecked={item.selected}></input>
@@ -189,7 +189,7 @@ let groceryList = [
              </label>
                 <hr></hr>
           <div style={{padding: "5px"}}>
-             {groceryList}
+             {listItems}
           </div>
                 <hr></hr>
        </>
