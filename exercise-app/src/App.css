@@ -58,8 +58,9 @@ h1,.something{
 
 
 button{
-  display:inline-block;
-  padding:0.3em 1.2em;
+  display: block;
+  width: 100%;
+  padding: 20px 28px;
   margin:0 0.1em 0.1em 0;
   border:0.16em solid rgba(255,255,255,0);
   border-radius:2em;
