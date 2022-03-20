@@ -64,6 +64,7 @@ html{
   text-shadow: 0 0.04em 0.04em rgba(0,0,0,0.35);
   text-align:center;
   transition: all 0.2s;
+  background-color:#9ccbe6;
   }
   .selectButtons{
   border-color: rgb(255, 255, 255);
