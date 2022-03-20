@@ -40,7 +40,7 @@ render() {
       screen =  <>
         <h1 class="something">Go Do Something!</h1>
         <p class="select">Select a Task</p>
-        {objects.map((value) => <li><button onClick ={() => this.setState({currentScreen:value.objType, exercisePicked: value})}>{value.name}</button> </li>)}
+        {objects.map((value) => <li><button class="selectButtons" onClick ={() => this.setState({currentScreen:value.objType, exercisePicked: value})}>{value.name}</button> </li>)}
        </>
 
     }else{
