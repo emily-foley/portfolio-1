@@ -76,6 +76,7 @@ class LogTask extends React.Component {
     render() {
       return (
         <div>
+            <h1>{this.props.name}</h1>
           <div>
             <p>Previous Weight</p>
             <input value={this.state.num1} onChange={this._changeNum1} step="any" />
