@@ -46,6 +46,7 @@ h1,.something{
   color:#e54b22;
   font-family: 'Teko', sans-serif;
   font-size: 70px;
+  margin-bottom: 0px;
 }
 
 .select{
@@ -64,8 +65,8 @@ button{
   border-radius:2em;
   box-sizing: border-box;
   text-decoration:none;
-  font-family:'Roboto',sans-serif;
-  font-weight:500;
+  font-family: 'Montserrat', sans-serif;
+  font-weight:800;
   color:#fff;
   text-shadow: 0 0.04em 0.04em rgba(0,0,0,0.35);
   text-align:center;
