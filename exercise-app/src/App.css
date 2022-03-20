@@ -64,8 +64,13 @@ p{
   font-size: 30px;
   font-weight:800;
   text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
+input{
+  align-content: center;
+}
 
 button{
   display: block;
