@@ -155,12 +155,12 @@ let toDoList = []
                    <input ref = {this.state.filterRef} type = "checkbox" onChange={() => this.setState({filtered: !this.state.filtered})} defaultChecked={false}></input>
                    Filter completed items
                 </label>
-             <div style = {{padding: "5px"}}>
+             <div>
                <hr></hr>
                {toDoList}
              </div>
-             <div style = {{padding : "5px"}}>
-                <input onKeyPress={(event) => this.handleKeyPress(event)} ref={this.state.inputRef}></input>
+             <div>
+                <input class="listInput" onKeyPress={(event) => this.handleKeyPress(event)} ref={this.state.inputRef}></input>
                 <button class="addExercise" onClick={this.addToDoItem}>Add Exercise</button>
              </div>
 
