@@ -144,7 +144,7 @@ let toDoList = []
              <label>
                 <input ref = {this.state.checkRef} type = "checkbox" onChange={() => this.completeItem(item.id)}defaultChecked={item.completed}></input>
                 <span style = {item.completed ? {textDecoration: "line-through"} : undefined}>{item.description}</span>
-                <button onClick = {() => this.removeItem()}>Delete</button>
+                <button class="deleteButton" onClick = {() => this.removeItem()}>Delete</button>
              </label>
           </div>
        ))
