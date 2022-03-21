@@ -69,9 +69,10 @@ input, p{
 }
 
 input{
-  width: 100%;
+  width: 50%;
   padding: 20px;
   text-align: center;
+  margin: auto;
 }
 
 button{
