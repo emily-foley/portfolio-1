@@ -161,7 +161,7 @@ let toDoList = []
              </div>
              <div style = {{padding : "5px"}}>
                 <input onKeyPress={(event) => this.handleKeyPress(event)} ref={this.state.inputRef}></input>
-                <button onClick={this.addToDoItem}>Add New Exercise</button>
+                <button class="addExercise" onClick={this.addToDoItem}>Add Exercise</button>
              </div>
 
           </>
