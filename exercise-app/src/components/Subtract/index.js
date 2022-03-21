@@ -77,15 +77,15 @@ class Subtract extends React.Component {
       return (
         <div>
             <h1>{this.props.name}</h1>
-          <div class="inputDiv">
+          <div>
             <p>Previous Weight</p>
             <input value={this.state.num1} onChange={this._changeNum1} step="any" />
           </div>
-          <div class="inputDiv">
+          <div>
             <p>Current Weight</p>
             <input value={this.state.num2} onChange={this._changeNum2} step="any" />
           </div>
-          <p>Weight Loss: {this.state.result} lbs</p>
+          <p class="weightLoss">Weight Loss: {this.state.result} lbs</p>
         </div>
       )
     }  
