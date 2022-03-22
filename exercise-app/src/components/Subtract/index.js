@@ -55,19 +55,24 @@ class Subtract extends React.Component {
       this._changeNum2 = this._changeNum2.bind(this);
     }
     
+    //creating a function that changes the first number to the user inputted number
     _changeNum1(e) {
       if (e.target.validity.valid) {
+        //creating a variable and assigning it to the user input
         var newNum1 = +(e.target.value)
+        //updating the state to the new input
         this.setState({
             num1: newNum1,
             result: newNum1 - this.state.num2
           }); 
       }
     }
-    
+    //creating a function that changes the second number to the user inputted number
       _changeNum2(e) {
       if (e.target.validity.valid) {
+        //creating a variable for the new second number and assigning it to the user input
         var newNum2 = +(e.target.value)
+         //updating the state to the new input
         this.setState({
             num2: newNum2,
             result: this.state.num1 - newNum2
