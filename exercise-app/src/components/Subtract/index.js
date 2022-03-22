@@ -1,42 +1,3 @@
-// //https://www.youtube.com/watch?v=PrkxUTEbZmI
-
-// import React from 'react';
-
-// class LogTask extends React.Component {
-//     constructor() {
-//         super()
-    
-//         this.state = { Num1 : 0, Num2 : 0 }
-//         this.state = { Result : 0 };
-//     }
-
-//     Sum=()=>
-//     { 
-//         var N1 = parseInt(this.state.Num1);
-//         var N2 = parseInt(this.state.Num2);
-
-//         var R = N1 + N2;
-//         this.setState({Result : R});
-//     }
-
-//     render() {
-//         return (
-//             <div>
-//                 <input placeholder="Num1" onChange={Num1=>this.setState({Num1})}/>
-//                 <input placeholder="Num2" onChange={Num2=>this.setState({Num2})}/>
-//                 <button onClick={this.Sum}>Calculate</button>
-//                 <p>{this.state.Result}</p>
-//             </div>
-//         );
-//     }
-
-// }
-
-// export default LogTask
-
-
-
-
 //https://codepen.io/tfbrown/pen/zjXvZy
 //handling react forms and using event targets - https://www.w3schools.com/react/react_forms.asp
 
@@ -83,15 +44,19 @@ class Subtract extends React.Component {
     render() {
       return (
         <div>
+            {/* displaying the name of the object */}
             <h1>{this.props.name}</h1>
           <div>
             <p>Previous Weight</p>
+            {/* setting the value of the input to num1, when the input is changed it updates it using hte updateNum1 function */}
             <input value={this.state.num1} onChange={this.updateNum1} step="any" />
           </div>
           <div>
             <p>Current Weight</p>
+            {/* setting the value of the input to num2, when the input is changed it updates it using hte updateNum2 function */}
             <input value={this.state.num2} onChange={this.updateNum2} step="any" />
           </div>
+          {/* displaying the result */}
           <p class="weightLoss">Weight Loss: {this.state.result} lbs</p>
         </div>
       )
