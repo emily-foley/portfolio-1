@@ -113,8 +113,7 @@ button{
 
 .deleteButton{
   display: inline-block;
-  width: 10%;
-  padding: 5px 30px;
+  width: 70px;
   margin : 0 auto;
   border: 0.16em solid rgba(255,255,255,0);
   border-radius: 2em;
@@ -130,6 +129,8 @@ button{
   background-color:#e54b22;
   border-color: rgb(255, 255, 255);
   padding:0px;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 .addExercise{
