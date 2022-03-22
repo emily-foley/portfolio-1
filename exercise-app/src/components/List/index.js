@@ -1,4 +1,7 @@
-//https://www.educative.io/blog/react-hooks-tutorial-todo-list
+//Code referenced -
+// using refs - https://reactjs.org/docs/refs-and-the-dom.html
+// keyboard events - https://www.pluralsight.com/guides/implement-keyboard-events-in-react
+// adding and deleting tasks - https://www.educative.io/blog/react-hooks-tutorial-todo-list
 
 import React from 'react'
 
@@ -23,6 +26,7 @@ let toDoList = []
           return {toDoList: prevList}
        }) 
     }
+    //adding a keyboard event that adds an item to the list when the enter key is pressed
     handleKeyPress = (event) => {
        if (event.key === "Enter") {
           this.addToDoItem()
@@ -59,8 +63,9 @@ let toDoList = []
           toDoList = toDoList.map((item) => (
           <div key = {item.id}>
              <label>
-                {/* creating a checkbox that shows the item is completed when checked*/}
+                {/* creating a checkbox that sets the item to completed when checked*/}
                 <input ref = {this.state.checkRef} type = "checkbox" onChange={() => this.completeItem(item.id)}defaultChecked={item.completed}></input>
+                {/* if the item is completed, add a strikethrough to the text */}
                 <span style = {item.completed ? {textDecoration: "line-through"} : undefined}>{item.description}</span>
                 {/* creating a delete button that removes the item when clicked */}
                 <button class="deleteButton" onClick = {() => this.removeItem()}>Delete</button>
