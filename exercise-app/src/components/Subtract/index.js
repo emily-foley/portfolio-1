@@ -38,12 +38,14 @@
 
 
 //https://codepen.io/tfbrown/pen/zjXvZy
+//handling react forms and using event targets - https://www.w3schools.com/react/react_forms.asp
 
 import React from 'react';
 
 class Subtract extends React.Component {
     constructor(props) {
       super(props);
+      //setting the initial state of in inputs and result to 0
       this.state = { 
         num1: 0,
         num2: 0,
