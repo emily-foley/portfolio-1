@@ -1,4 +1,4 @@
-//https://codepen.io/tfbrown/pen/zjXvZy
+//using onChange - https://sebhastian.com/react-onchange/#:~:text=In%20React%2C%20onChange%20is%20used,the%20value%20of%20input%20elements.&text=Now%20whenever%20you%20type%20something,passed%20into%20the%20onChange%20prop.
 //handling react forms and using event targets - https://www.w3schools.com/react/react_forms.asp
 
 import React from 'react';
