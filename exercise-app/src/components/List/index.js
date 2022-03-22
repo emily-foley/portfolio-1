@@ -2,15 +2,17 @@
 
 import React from 'react'
 
+//setting to do list to an empty array
 let toDoList = []
  
  export default class List extends React.Component {
     constructor(props) {
        super(props)
+       //creating refs that can be used later in the component
        let inputRef = React.createRef()
        let filterRef = React.createRef()
        let deleteText = React.createRef()
-       this.state = {toDoList, curId:toDoList.length+1, inputRef, filterRef, deleteText, filtered:false, value: this.props.value}
+       this.state = {toDoList, curId:toDoList.length + 1, inputRef, filterRef, deleteText, filtered:false, value: this.props.value}
     }
     completeItem = (itemId) => {
        this.setState((prevState) => {
