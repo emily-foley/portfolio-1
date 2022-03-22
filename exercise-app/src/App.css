@@ -153,9 +153,10 @@ button{
 }
 
 .listInput{
-  width: 40%;
+  width: 37%;
   padding: 5px;
   text-align: center;
   display: block;
   margin : 0 auto;
+  font-size: 20px;
 }
