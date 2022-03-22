@@ -152,7 +152,7 @@ let toDoList = []
           <>
              <h1>Workout To Do List</h1>
                 <label>
-                   <input ref = {this.state.filterRef} type = "checkbox" onChange={() => this.setState({filtered: !this.state.filtered})} defaultChecked={false}></input>
+                   <input class="listCheckbox" ref = {this.state.filterRef} type = "checkbox" onChange={() => this.setState({filtered: !this.state.filtered})} defaultChecked={false}></input>
                    Show uncompleted items
                 </label>
              <div>
