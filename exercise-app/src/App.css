@@ -132,6 +132,7 @@ button{
   padding-top: 5px;
   padding-bottom: 5px;
   position: absolute; right: 0;
+  margin-right: 200px;
 }
 
 .addExercise{
