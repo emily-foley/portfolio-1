@@ -51,12 +51,12 @@ class Subtract extends React.Component {
         num2: 0,
         result: 0
       };
-      this._changeNum1 = this._changeNum1.bind(this);
-      this._changeNum2 = this._changeNum2.bind(this);
+      this.updateNum1 = this.updateNum1.bind(this);
+      this.updateNum2 = this.updateNum2.bind(this);
     }
     
     //creating a function that changes the first number to the user inputted number
-    _changeNum1(e) {
+    updateNum1(e) {
       if (e.target.validity.valid) {
         //creating a variable and assigning it to the user input
         var newNum1 = +(e.target.value)
@@ -68,7 +68,7 @@ class Subtract extends React.Component {
       }
     }
     //creating a function that changes the second number to the user inputted number
-      _changeNum2(e) {
+    updateNum2(e) {
       if (e.target.validity.valid) {
         //creating a variable for the new second number and assigning it to the user input
         var newNum2 = +(e.target.value)
@@ -86,11 +86,11 @@ class Subtract extends React.Component {
             <h1>{this.props.name}</h1>
           <div>
             <p>Previous Weight</p>
-            <input value={this.state.num1} onChange={this._changeNum1} step="any" />
+            <input value={this.state.num1} onChange={this.updateNum1} step="any" />
           </div>
           <div>
             <p>Current Weight</p>
-            <input value={this.state.num2} onChange={this._changeNum2} step="any" />
+            <input value={this.state.num2} onChange={this.updateNum2} step="any" />
           </div>
           <p class="weightLoss">Weight Loss: {this.state.result} lbs</p>
         </div>

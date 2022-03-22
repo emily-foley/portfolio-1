@@ -32,7 +32,7 @@ render() {
       { objType: REPETITION, name: "Jumping Jacks" },
       { objType: DURATION, name: "Running" },
       { objType: SUBTRACT, name: "Weight Calculator" },
-      { objType: LIST, name: "List" }
+      { objType: LIST, name: "Workout List" }
     ]
   //if on menu screen, show the text and show buttons with the names of the excercises
   let screen
